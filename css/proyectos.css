@@ -1,0 +1,83 @@
+#content h3{
+	color: #03738C;
+	font-size: 1.4vw;
+	margin: 0px;
+	margin-top: 2%;
+}
+
+h4{
+	font-size: 1.3vw;
+	margin: 0px;
+	font-weight: normal;
+}
+
+ul{
+	margin:0px;
+}
+
+#proyectos{
+	grid-template-columns: 1fr;
+}
+
+.lista{
+	text-align: center;
+}
+
+.li {
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 2%;
+	width: 90%;
+}
+
+.title{
+	font-size: 1.5vw;
+	font-weight: normal;
+	background-color: rgb(255, 191, 0, .7);
+	text-align: center;
+	padding: 2px;
+	border-radius: 25px;
+	display: inline-block;
+	width: 100%;
+}
+
+#requerimientos{
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	margin-left: 1%;
+
+}
+
+#gantt, #propuesta{
+	width: 100%;
+	max-width: 2000px;
+}
+
+@media only screen and (max-width: 960px) {
+	#content h3{
+		font-size: 2.5vw;
+	}
+
+	h4{
+		font-size: 2.5vw;
+	}
+	
+	.title{
+		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	#content h3{
+		font-size: 3.5vw;
+	}
+
+	h4{
+		font-size: 3vw;
+	}
+	
+	.title{
+		font-size: 3vw;
+	}
+}

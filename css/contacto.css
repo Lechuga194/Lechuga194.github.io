@@ -1,0 +1,49 @@
+#contenido{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.7);
+	padding: 25px;
+}
+
+p {
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	text-shadow: 2px 1px #5BBAD3;
+}
+
+@media only screen and (max-width: 450px) {
+
+	p {
+		font-size: 1.5em;
+	}
+
+}
+
+input[type=text], input[type=email], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	margin: 20px 20px 20px 20px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #FFBF00;
+	color: white;
+	padding: 12px 10px;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #fdcc3b;
+}
+
+
+.boton {
+	text-align: center;
+}

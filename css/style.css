@@ -1,0 +1,186 @@
+body {
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	text-align: center;
+	color: #03738C;
+	text-shadow: 2px 1px #5BBAD3;
+	font-size: 1.9vw;
+}
+
+#navbar {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	position: fixed;
+	background-color: rgba(3,115,140,.8);
+	top: 0;
+	left: 0;
+	justify-content: flex-end;
+}
+
+#logo{
+	margin: 20px;
+	margin-left: 8vw;
+	width: 100px;
+	margin-top: 1.6vw;
+}
+
+.navegacion{
+	border: 1px solid rgb(2, 82, 100, .6);
+	border-bottom: 0px;
+	border-top: 0px;
+	background-color: rgba(3,115,140,.6);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.navegacion:hover {
+	background-color: rgb(2, 82, 100, .6);
+}
+
+.navegacion h3{
+	font-family: 'Hind Siliguri', sans-serif;
+	color: #FFBF00;
+	font-size: 2vw;
+	text-align: center;
+}
+
+
+#content{
+	margin-top: 10%;	
+}
+
+#encabezado {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 1vw;
+	color: #03738C;
+}
+
+#encabezado p {
+	font-size: 4em;
+	color: white;
+  	line-height: 80px;
+  	border-bottom: 3px solid #FFBF00;
+  	padding-bottom: 0px;
+  	text-decoration: none;
+  	text-align: center;
+  	text-shadow: 2px 2px #5BBAD3;
+}
+
+.main-container {
+	font-family: 'Hind Siliguri', sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.main-container p {
+	margin: .5% 0px 2% 10%;
+}
+
+.main-container img{
+	width: 70%;
+  	max-width: 150px;
+  	height: auto;
+  	display: block;
+  	margin-top: 10px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 20px;
+}
+
+.info{
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, .8);
+	font-size: 1.2vw;
+	padding: 20px;
+	padding-top: 5px;
+	margin: 2%;
+}
+
+
+@media only screen and (max-width: 960px) {
+	h2{
+		font-size: 3vw;
+	}
+
+	#content{
+		margin-top: 20%;
+	}
+
+	#navbar {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: flex-start;
+	}
+
+	.navegacion h3{
+		font-size: 4vw;
+	}
+
+	#encabezado p{
+		font-size: 6vw;
+		margin-top: 20px;
+	}
+
+	.info{
+		font-size: 2.5vw;
+	}
+
+	#logoCont{
+		width: 50%;
+		margin: 10%;
+	}
+
+	#logo{
+		width: 100%;
+		margin: 0px;
+		margin-left: 5vw;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	h2{
+		font-size: 3.7vw;
+	}
+
+	#content{
+		margin-top: 15%;
+	}
+
+	
+
+	.navegacion h3{
+		font-size: 4vw;
+	}
+
+	#encabezado p{
+		font-size: 7vw;
+		margin-top: 10px;
+	}
+
+	.info{
+		font-size: 3.3vw;
+	}
+
+	.main-container img{
+		width: 90%;
+	}
+}

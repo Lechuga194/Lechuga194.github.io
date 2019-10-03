@@ -1,0 +1,182 @@
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gridtxt{
+	grid-column: 1/3;
+}
+
+#nosotros{
+	grid-column: 1/3;
+}
+
+#imgNos{
+	width: 50%;
+	max-width: 1000px;
+}
+
+#mision h2, #vision h2, #nosotros h2{
+	margin-left: 5%;
+	text-align: left;
+	margin-bottom: 1%;
+}
+
+/*		Parte de Objetivos		*/
+#objetivos {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display: grid;
+}
+
+#gridObj{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+#infoObj{
+	grid-column: 1/3;
+}
+
+#imgObj{
+ 	text-align: center;
+ 	padding-top: 10%;
+ }
+
+ #imgObj img{
+ 	width: 70%;
+ }
+
+.lista{
+	grid-column: 4/6;
+}
+
+.li {
+	margin: 10px 20px 20px 20px;
+	background-color: rgb(255, 191, 0, .7);
+	text-align: center;
+	padding: 5px;
+	border-radius: 25px;
+	width: 80%;
+}
+
+
+
+/*		Parte de Valores		*/
+#valores {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#valCont{
+	grid-template-columns: repeat(3, 1fr);
+	display: grid;
+}
+
+#scnd td{
+	border-top: 2px solid rgb(3, 115, 140, .5);
+}
+
+#valores h3{
+	text-align: center;
+	color: #03738C;
+	font-size: 1.5vw;
+	margin-top: 10px;
+	margin-bottom: 1%;
+}
+
+#valores img{
+	width: 30%;
+	margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 960px) {
+	#nosotros{
+		text-align: center;
+	}
+
+	#nosotros .gridtxt{
+		grid-column: 1/4;
+	}
+
+	#nosotros h2{
+		text-align: center;
+	}
+
+	#nosotros p{
+		margin: 2%;
+	}
+
+	#nosotros .grid{
+		text-align: center;
+	}
+
+	#imgNos {
+		width: 100%;
+		margin-left: 100%; 
+	}
+
+	#mision, #vision{
+		grid-column: 1/3;
+	}
+
+	#gridObj{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#infoObj{
+		grid-column: 1/2;
+		text-align: center;
+	}
+
+	#infoObj p{
+		margin: .5% 0px 2.5% 2.5%;
+	}
+
+	#imgObj{
+		padding: 2%;
+	}
+
+	.lista{
+		grid-column: 1/2;
+		text-align: center;
+	}
+
+	.li{
+		display: inline-block;
+	}
+
+	#valores h3{
+		font-size: 2.5vw;
+	}
+
+	#valores p{
+		font-size: 2vw;
+	}
+
+	#valores img{
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	#imgObj img{
+		width: 30%;
+	}
+
+	#valores img{
+		width: 50%;
+	}
+
+	#valores h3{
+		font-size: 3.5vw;
+	}
+
+	#valores p{
+		font-size: 3vw;
+	}
+
+	#valCont{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
