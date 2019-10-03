@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+</head>
+
+<link rel="icon" href="	img/logo.png">
+
+<!-- Live reload -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+<!-- Estilos -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/contacto.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<body>
+
+	<div id="navbar">
+
+		<div id="logoCont">
+			<a href="index.html"><img id="logo" class="animated bounceInLeft delay-1s slow" src="img/logo.png"></a>
+		</div>
+
+		<a class="navegacion animated fadeIn delay-1s slow" href="index.html">
+			<div>
+				<h3>Conócenos</h3>
+			</div>
+		</a>
+		<a class="navegacion animated fadeIn delay-1s slow" href="proyectos.html">
+			<div>
+				<h3>Proyectos</h3>
+			</div>
+		</a>
+		<a class="navegacion animated fadeIn delay-1s slow" href="contacto.html">
+			<div>
+				<h3>Contacto</h3>
+			</div>
+		</a>
+	</div>
+
+	<div id="content">	
+
+		<div id="encabezado">
+			<p class="animated jackInTheBox delay-2s slow">¡Contáctanos!</p>
+		</div>
+
+
+
+		<div id="contenido">
+
+			<div></div>
+			
+			<form>
+
+				<label for="fname">Nombre</label>
+				<input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+
+
+				<label for="email">Email</label>
+				<input type="email" class="Email" name="email" placeholder="Tu apellido...">
+
+				<label for="country">País</label>
+				<select class="country" name="country">
+					<option value="mexico">México</option>
+					<option value="japon">Japón</option>
+					<option value="canada">Canadá</option>
+					<option value="korea">Corea</option>
+					<option value="taiwan">Taiwan</option>
+					<option value="españa">España</option>
+				</select>
+
+				<label for="subject">Asunto</label>
+				<textarea class="subject" name="subject" placeholder="Escribe aquí..." style="height:200px"></textarea>
+
+				<div class="boton">
+					<input type="submit" name="Enviar">
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
