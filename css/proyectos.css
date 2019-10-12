@@ -41,7 +41,7 @@ ul{
 	width: 100%;
 }
 
-#requerimientos{
+.text{
 	text-align: left;
 	display: inline-block;
 	width: 100%;
@@ -52,6 +52,15 @@ ul{
 #gantt, #propuesta{
 	width: 100%;
 	max-width: 2000px;
+}
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#riesgos table{
+	margin: 2vw;
 }
 
 @media only screen and (max-width: 960px) {
