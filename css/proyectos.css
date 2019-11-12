@@ -90,3 +90,14 @@ table, th, td{
 		font-size: 3vw;
 	}
 }
+
+.info h3{
+	text-align: center;
+	text-decoration: none;
+}
+
+.info object{
+	width: 100%;
+	height: 1010px;
+	
+}
