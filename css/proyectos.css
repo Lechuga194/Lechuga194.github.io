@@ -101,3 +101,8 @@ table, th, td{
 	height: 1010px;
 	
 }
+
+.info p {
+	text-align: center;
+	size: 30px;
+}
